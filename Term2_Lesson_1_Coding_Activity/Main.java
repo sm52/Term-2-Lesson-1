@@ -25,8 +25,10 @@ public class Main
         list.remove("STOP");
         System.out.println(list.size());
         System.out.println(list);
-        list.remove(0);
-        list.remove(count-2);
-        System.out.println(list);
+        if(count <= 2){
+            list.remove(0);
+            list.remove(count-2);
+            System.out.println(list);
+        }
     }
 }
